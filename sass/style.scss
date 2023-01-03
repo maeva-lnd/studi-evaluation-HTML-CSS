@@ -188,3 +188,43 @@ header {
     width: 60px;
   }
 }
+
+/* FOOTER */
+
+footer {
+  padding: $padding;
+  color: $beige;
+
+  .follow-us {
+
+    h3 {
+      font-size: 18px;
+      color: $beige;
+      text-transform: uppercase;
+    }
+
+    img {
+      width: 23px;
+      margin:10px;
+    }
+  }
+
+  .important-links {
+    padding: $padding 0;
+
+    a {
+      color: $beige;
+      padding: 10px 0;
+      display: inline-block;
+    }
+  }
+
+  .copyright {
+    border-top : 1px solid $beige;
+    padding-top: 5px;
+
+    p {
+      color: $beige;
+    }
+  }
+}

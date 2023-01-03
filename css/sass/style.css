@@ -148,4 +148,34 @@ header .container nav ul li a:hover {
   width: 60px;
 }
 
+/* FOOTER */
+footer {
+  padding: 20px;
+  color: #FFFCF2;
+}
+footer .follow-us h3 {
+  font-size: 18px;
+  color: #FFFCF2;
+  text-transform: uppercase;
+}
+footer .follow-us img {
+  width: 23px;
+  margin: 10px;
+}
+footer .important-links {
+  padding: 20px 0;
+}
+footer .important-links a {
+  color: #FFFCF2;
+  padding: 10px 0;
+  display: inline-block;
+}
+footer .copyright {
+  border-top: 1px solid #FFFCF2;
+  padding-top: 5px;
+}
+footer .copyright p {
+  color: #FFFCF2;
+}
+
 /*# sourceMappingURL=style.css.map */
