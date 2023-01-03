@@ -17,6 +17,55 @@
   background: #FFFCF2;
 }
 
+.bg-light-grey {
+  background: #CCC5B9;
+}
+
+.bg-dark-grey {
+  background: #403D39;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-justify {
+  text-align: justify;
+}
+
+h1, h2, h3 {
+  color: #252422;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #403D39;
+}
+
+.button {
+  background: #EB5E28;
+  color: #FFFCF2;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
 .hide {
   display: none;
 }
@@ -51,6 +100,52 @@ header .container nav ul li a {
 }
 header .container nav ul li a:hover {
   background: #CCC5B9;
+}
+
+/* PAGE D'ACCUEIL PET PROTECT */
+#slider {
+  min-height: 300px;
+  background-image: url("../../../Images/cat-7203072_960_720.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#slider .button {
+  margin-top: 10px;
+}
+#slider h1 {
+  color: #FFFCF2;
+  margin-top: 5px;
+}
+
+#asso-history, #adoption-banner, #donation-banner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 5%;
+}
+#asso-history h2, #adoption-banner h2, #donation-banner h2 {
+  padding: 20px 0;
+}
+#asso-history img, #adoption-banner img, #donation-banner img {
+  width: 100%;
+}
+#asso-history .button, #adoption-banner .button, #donation-banner .button {
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#key-information .key-data {
+  padding: 20px 0;
+}
+#key-information img {
+  width: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
