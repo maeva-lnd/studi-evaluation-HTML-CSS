@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* Eléments principaux de la page */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.full {
+  width: 100%;
+}
+
+.bg-beige {
+  background: #FFFCF2;
+}
+
+.hide {
+  display: none;
+}
+
+/* HEADER */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header .container .logo img {
+  width: 110px;
+}
+header .container #toggle img {
+  width: 30px;
+}
+header .container nav {
+  position: absolute;
+  justify-content: center;
+  background: #FFFCF2;
+  top: 110px;
+  left: 0;
+  width: 100%;
+  font-size: 16px;
+}
+header .container nav ul li a {
+  color: #403D39;
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+}
+header .container nav ul li a:hover {
+  background: #CCC5B9;
+}
+
+/*# sourceMappingURL=style.css.map */

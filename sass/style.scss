@@ -1,0 +1,82 @@
+$beige : #FFFCF2;
+$orange : #EB5E28;
+$light-grey : #CCC5B9;
+$dark-grey : #403D39;
+$black : #252422;
+$padding : 20px;
+
+$text : 16px;
+
+
+/* Eléments principaux de la page */
+
+* {
+  padding: 0;
+  margin : 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.full {
+  width: 100%;
+}
+
+.bg-beige {
+  background: $beige;
+}
+
+.hide {
+  display: none;
+}
+
+/* HEADER */
+
+header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $padding;
+
+    .logo {
+      img {
+        width: 110px;
+      }
+    }
+
+    #toggle {
+      img {
+        width: 30px;
+      }
+    }
+
+    nav {
+      position: absolute;
+      justify-content: center;
+      background: $beige;
+      top: 110px;
+      left: 0;
+      width: 100%;
+      font-size: $text;
+
+      ul {
+
+        li {
+
+          a {
+            color: $dark-grey;
+            display: block;
+            text-align: center;
+            padding: 15px 0;
+
+            &:hover {
+              background: $light-grey;
+            }
+          }
+        }
+      }
+    }
+  }
+}
