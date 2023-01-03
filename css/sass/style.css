@@ -1,0 +1,264 @@
+@charset "UTF-8";
+/* Eléments principaux de la page */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.full {
+  width: 100%;
+}
+
+.bg-beige {
+  background: #FFFCF2;
+}
+
+.bg-light-grey {
+  background: #CCC5B9;
+}
+
+.bg-dark-grey {
+  background: #403D39;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-justify {
+  text-align: justify;
+}
+
+h1, h2, h3 {
+  color: #252422;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #403D39;
+}
+
+.button {
+  background: #EB5E28;
+  color: #FFFCF2;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+/* HEADER */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header .container .logo img {
+  width: 110px;
+}
+header .container #toggle img {
+  width: 30px;
+}
+header .container nav {
+  position: absolute;
+  justify-content: center;
+  background: #FFFCF2;
+  top: 110px;
+  left: 0;
+  width: 100%;
+  font-size: 16px;
+}
+header .container nav ul li a {
+  color: #403D39;
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+}
+header .container nav ul li a:hover {
+  background: #CCC5B9;
+}
+
+/* PAGE D'ACCUEIL PET PROTECT */
+#slider {
+  min-height: 300px;
+  background-image: url("../../../Images/cat-7203072_960_720.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#slider .button {
+  margin-top: 10px;
+}
+#slider h1 {
+  color: #FFFCF2;
+  margin-top: 5px;
+}
+
+#asso-history, #adoption-banner, #donation-banner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 5%;
+}
+#asso-history h2, #adoption-banner h2, #donation-banner h2 {
+  padding: 20px 0;
+}
+#asso-history img, #adoption-banner img, #donation-banner img {
+  width: 100%;
+}
+#asso-history .button, #adoption-banner .button, #donation-banner .button {
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#key-information .key-data {
+  padding: 20px 0;
+}
+#key-information img {
+  width: 60px;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  color: #FFFCF2;
+}
+footer .follow-us h3 {
+  font-size: 18px;
+  color: #FFFCF2;
+  text-transform: uppercase;
+}
+footer .follow-us img {
+  width: 23px;
+  margin: 10px;
+}
+footer .important-links {
+  padding: 20px 0;
+}
+footer .important-links a {
+  color: #FFFCF2;
+  padding: 10px 0;
+  display: inline-block;
+}
+footer .copyright {
+  border-top: 1px solid #FFFCF2;
+  padding-top: 5px;
+}
+footer .copyright p {
+  color: #FFFCF2;
+}
+
+/* MEDIAS QUERIES */
+@media screen and (min-width: 768px) {
+  #slider {
+    min-height: 450px;
+  }
+  #slider h1 {
+    padding-top: 10px;
+  }
+  #slider .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #slider .buttons .button {
+    margin: 0 10px;
+  }
+  #asso-history p, #adoption-banner p, #donation-banner p {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  header .container #toggle {
+    display: none;
+  }
+  header .container nav {
+    position: inherit;
+    justify-content: flex-end;
+  }
+  header .container nav.hide {
+    display: flex;
+  }
+  header .container nav ul {
+    display: flex;
+  }
+  header .container nav ul li a {
+    padding: 10px 20px;
+  }
+  header .container nav ul li a:hover, header .container nav ul li a.active {
+    background: none;
+    border-bottom: 2px solid #EB5E28;
+  }
+  #slider {
+    min-height: 600px;
+  }
+  #asso-history, #adoption-banner, #donation-banner {
+    padding: 50px 0;
+  }
+  #asso-history img, #adoption-banner img, #donation-banner img {
+    width: 500px;
+  }
+  #asso-history .content, #adoption-banner .content, #donation-banner .content {
+    width: 600px;
+  }
+  #asso-history .container, #adoption-banner .container, #donation-banner .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #asso-history p, #adoption-banner p, #donation-banner p {
+    padding: 30px 0;
+  }
+  #key-information {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #adoption-banner .container {
+    flex-direction: row-reverse;
+  }
+  footer .important-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
