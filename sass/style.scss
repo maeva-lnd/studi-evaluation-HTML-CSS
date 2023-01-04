@@ -229,6 +229,41 @@ footer {
   }
 }
 
+/* BODY PAGE EVENTS */
+
+#events {
+  padding: $padding 0;
+}
+
+#first-event, #second-event, #third-event {
+  padding: $padding;
+
+  h2 {
+    padding: $padding 0;
+  }
+
+  .card {
+    width: 90%;
+    padding: $padding;
+    display: inline-block;
+    box-shadow: 2px 2px 2px grey;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .date {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: $text;
+  }
+
+  .button {
+    margin-top: 20px;
+  }
+}
+
 /* MEDIAS QUERIES */
 
 @media screen and (min-width: 768px) {
