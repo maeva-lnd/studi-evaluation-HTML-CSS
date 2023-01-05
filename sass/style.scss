@@ -371,6 +371,31 @@ footer {
     }
   }
 
+  #first-event, #second-event, #third-event {
+
+    .card {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        width: 400px;
+      }
+
+      .right-column {
+        padding: 0 30px;
+
+        p {
+          text-align: justify;
+        }
+
+        .button {
+          float: right;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  
   footer {
 
     .important-links {
@@ -384,4 +409,3 @@ footer {
     }
   }
 }
-
