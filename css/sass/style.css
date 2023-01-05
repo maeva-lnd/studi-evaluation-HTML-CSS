@@ -178,6 +178,35 @@ footer .copyright p {
   color: #FFFCF2;
 }
 
+/* BODY PAGE EVENTS */
+#events {
+  padding: 20px 0;
+}
+
+#first-event, #second-event, #third-event {
+  padding: 20px;
+}
+#first-event h2, #second-event h2, #third-event h2 {
+  padding: 20px 0;
+}
+#first-event .card, #second-event .card, #third-event .card {
+  width: 90%;
+  padding: 20px;
+  display: inline-block;
+  box-shadow: 2px 2px 2px grey;
+}
+#first-event .card img, #second-event .card img, #third-event .card img {
+  width: 100%;
+}
+#first-event .date, #second-event .date, #third-event .date {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+#first-event .button, #second-event .button, #third-event .button {
+  margin-top: 20px;
+}
+
 /* MEDIAS QUERIES */
 @media screen and (min-width: 768px) {
   #slider {
@@ -252,6 +281,23 @@ footer .copyright p {
   }
   #adoption-banner .container {
     flex-direction: row-reverse;
+  }
+  #first-event .card, #second-event .card, #third-event .card {
+    display: flex;
+    flex-direction: row;
+  }
+  #first-event .card img, #second-event .card img, #third-event .card img {
+    width: 400px;
+  }
+  #first-event .card .right-column, #second-event .card .right-column, #third-event .card .right-column {
+    padding: 0 30px;
+  }
+  #first-event .card .right-column p, #second-event .card .right-column p, #third-event .card .right-column p {
+    text-align: justify;
+  }
+  #first-event .card .right-column .button, #second-event .card .right-column .button, #third-event .card .right-column .button {
+    float: right;
+    margin-top: 30px;
   }
   footer .important-links ul {
     display: flex;
